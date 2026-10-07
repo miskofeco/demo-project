@@ -23,5 +23,7 @@ pnpm format:check
 pnpm build
 ```
 
-Aktuálna stránka je úvodný základ. Program, rečníci a predregistrácia sú
-naplánované v ďalších krokoch. Mock registrácia nebude slúžiť na verejný zber.
+Landing je dostupný na `/sk` a `/en` (adresa `/` presmeruje na `/sk`). Obsah a
+ukážkové dáta sú v `src/content/`; farby a písma v `src/app/globals.css`.
+Predregistrácia zatiaľ nie je otvorená. Mock registrácia nebude slúžiť na
+verejný zber.

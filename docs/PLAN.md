@@ -3,7 +3,8 @@
 ## Cieľ
 
 Responzívny web s landing sekciou, ukážkovým programom, ukážkovými rečníkmi,
-predregistráciou a FAQ. Termín a miesto sú zatiaľ „Upresníme“. Základné texty
+predregistráciou a FAQ. Dátum je 12. december 2026; čas a miesto sú zatiaľ
+„Upresníme“. Základné texty
 rozhrania, formulár a FAQ budú v slovenčine a angličtine.
 
 ## Rozhodnutia
@@ -44,3 +45,10 @@ rozhrania, formulár a FAQ budú v slovenčine a angličtine.
 Projekt sa dá nainštalovať a spustiť; `pnpm lint` a `pnpm build` prejdú.
 Závislosti a nastavenia sú uložené v repozitári a citlivé `.env` súbory Git
 ignoruje.
+
+## Stav k 7. októbru 2026
+
+Kroky 1–3 sú hotové: základ projektu, SK/EN adresy a landing s hero odpočtom,
+filtrovaným ukážkovým programom, tematickými kartami rečníkov, FAQ a footerom.
+Presný čas a miesto zostávajú otvorené. Registrácia (kroky 4–5) ešte nie je
+spustená.

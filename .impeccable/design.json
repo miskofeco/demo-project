@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T17:18:12Z",
+  "title": "Design System: AI Meetup Košice",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Cool Canvas",
+        "canonical": "oklch(0.974 0.012 247)"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Deep Ink",
+        "canonical": "oklch(0.206 0.032 257)"
+      },
+      "night": {
+        "role": "primary",
+        "displayName": "Night Stage",
+        "canonical": "oklch(0.19 0.045 261)"
+      },
+      "signal": {
+        "role": "secondary",
+        "displayName": "Meetup Signal",
+        "canonical": "oklch(0.88 0.18 124)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero and section headings."
+      },
+      "body": { "displayName": "Body", "purpose": "Reading copy and controls." }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "orbit",
+        "value": "28–36s linear infinite",
+        "purpose": "Decorative hero signal only; disabled for reduced motion."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main page action on the hero.",
+      "html": "<button class=\"ds-primary\">Explore the agenda</button>",
+      "css": ".ds-primary { background: var(--signal); color: var(--signal-foreground); border: 0; border-radius: 9999px; padding: 12px 24px; font-weight: 700; min-height: 48px; cursor: pointer; } .ds-primary:hover { filter: brightness(.95); } .ds-primary:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "description": "Quiet action on a dark surface.",
+      "html": "<button class=\"ds-secondary\">Meet the speakers</button>",
+      "css": ".ds-secondary { background: transparent; color: var(--hero-foreground); border: 1px solid rgb(255 255 255 / .25); border-radius: 9999px; padding: 12px 24px; min-height: 48px; cursor: pointer; } .ds-secondary:hover { background: rgb(255 255 255 / .1); } .ds-secondary:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "description": "Compact section navigation.",
+      "html": "<a class=\"ds-nav\" href=\"#program\">Program</a>",
+      "css": ".ds-nav { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 9999px; color: var(--muted-foreground); text-decoration: none; } .ds-nav:hover { background: var(--muted); color: var(--foreground); } .ds-nav:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }"
+    },
+    {
+      "name": "Content Card",
+      "kind": "card",
+      "refersTo": "hero-card",
+      "description": "Rounded surface for event content.",
+      "html": "<article class=\"ds-card\">Meetup content</article>",
+      "css": ".ds-card { background: var(--card); color: var(--card-foreground); border: 1px solid var(--border); border-radius: 20px; padding: 24px; }"
+    },
+    {
+      "name": "Topic Badge",
+      "kind": "chip",
+      "description": "Small format and topic label.",
+      "html": "<span class=\"ds-badge\">Workshop</span>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; min-height: 28px; border-radius: 9999px; padding: 4px 12px; background: var(--secondary); color: var(--secondary-foreground); font: 600 12px 'DM Sans Variable', sans-serif; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Meeting Signal",
+    "overview": "A dark event stage meets a clear editorial layout. Lime marks the date and the next action. Orbital geometry evokes ideas finding one another without pretending to depict confirmed people or a venue.",
+    "keyCharacteristics": [
+      "asymmetric bento layout",
+      "high contrast signal accent",
+      "clear typographic hierarchy"
+    ],
+    "rules": [
+      {
+        "name": "One signal",
+        "body": "Use lime for the countdown and primary action; let other surfaces stay calm.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Mark illustrative content clearly.",
+      "Keep controls reachable on mobile."
+    ],
+    "donts": [
+      "Invent confirmed speakers or venue details.",
+      "Add decorative motion to every section."
+    ]
+  }
+}
